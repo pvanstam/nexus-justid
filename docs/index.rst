@@ -24,9 +24,9 @@ Contents:
    prerequisites
    certificates
    configure_NEXUSe2e
-   Testing
-   Upgrade / reinstallation
-   Todo list
+   testing
+   upgrade and reinstallation
+   todo list
 
 
 
