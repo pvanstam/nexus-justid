@@ -25,8 +25,8 @@ Contents:
    certificates
    configure_NEXUSe2e
    testing
-   upgrade and reinstallation
-   todo list
+   upgrade_and_reinstallation
+   todo_list
 
 
 
