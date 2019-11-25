@@ -309,7 +309,7 @@ In NEXUSe2e go to:
 :Interval: 30000
 :Choreography: ATG-1-0_00000001003214436001-00000001234567890000_0001 *(CPAID from the CPA)*
 :Action: BestandenAanleveren
-:Partner: 00000001003214436001 *(Value of Collaboration Partner / CIOT)
+:Partner: 00000001003214436001 *(Value of Collaboration Partner / CIOT)*
 :Extension:
 :Conversation:  
 :Mapping Service:
