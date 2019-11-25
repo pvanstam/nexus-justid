@@ -88,7 +88,7 @@ Configure the ``StaticEbmsHeaderPipelet``, set the values as:
 :Role to: OntvangerTelecomgegevens
 :Service: AanleverenTelecomgegevens:1:0
 :Service Type: urn:ebv:services
-:Cut ContentId: ☑
+:Cut ContentId: Checked
 
 * Click ``Save`` and then ``Apply``
 
@@ -107,7 +107,7 @@ Create a new Backend Pipeline for **Ping/Pong** actions
 :Role to: OntvangerTelecomgegevens
 :Service: urn:oasis:names:tc:ebxml-msg:service
 :Service Type:   
-:Cut ContentId: ☑
+:Cut ContentId: Checked
 
 * Click ``Save`` and then ``Apply``
 
@@ -189,11 +189,11 @@ In both cases the Certificate ID is the same as the Collaboration Partner ID. Yo
 :TRP: ebxml-2.0-http
 :Timeout (sec): 10800
 :Message Interval (sec): 30
-:Secure: ☐
-:Reliable: ☑
-:Synchronous: ☐
-:Pick Up: ☐
-:Hold: ☐
+:Secure: Unchecked
+:Reliable: Checked
+:Synchronous: Unchecked
+:Pick Up: Unchecked
+:Hold: Unchecked
 :Synchronous Timeout: 0
 :Retries: 8
 :Login Name: <empty>
@@ -210,11 +210,11 @@ Add another connection for the **Ping/Pong** actions, since these are not Reliab
 :TRP: ebxml-2.0-http
 :Timeout (sec): 10800
 :Message Interval (sec): 30
-:Secure: ☐
-:Reliable: ☐   
-:Synchronous: ☐
-:Pick Up: ☐
-:Hold: ☐
+:Secure: Unchecked
+:Reliable: Unchecked   
+:Synchronous: Unchecked
+:Pick Up: Unchecked
+:Hold: Unchecked
 :Synchronous Timeout: 0
 :Retries: 0
 :Login Name: <empty>
@@ -243,12 +243,12 @@ The Choreograpy ID is the CPA ID
 Enter the Choreography and Add Action
 
 :Action ID: FunctioneelAntwoorden
-:Valid Start Action: ☑
-:Valid Termination Action: ☐
+:Valid Start Action: Checked
+:Valid Termination Action: Unchecked
 :Backend Inbound Pipeline: FileSaveInboundPipeline
 :Backend Outbound Pipeline: FileLoadOutboundPipeline
 :Status Update Pipeline: None
-:Polling Required: ☐
+:Polling Required: Unchecked
 :Document Type:
 
 Add another Action for **BestandenAanleveren** with the same values. Open again after creating it and check **FunctioneelAntwoorden** as Follow-Up Action
@@ -260,23 +260,23 @@ For testing you can add a **Ping** and **Pong** action. Ping/Pong is an optional
 Ping:
 
 :Action ID: Ping
-:Valid Start Action: ☑
-:Valid Termination Action: ☐
+:Valid Start Action: Checked
+:Valid Termination Action: Unchecked
 :Backend Inbound Pipeline: FileSaveInboundPipeline
 :Backend Outbound Pipeline: PingPipeline
 :Status Update Pipeline: None
-:Polling Required: ☐
+:Polling Required: Unchecked
 :Document Type:
 
 Pong:
 
 :Action ID: Pong
-:Valid Start Action: ☐
-:Valid Termination Action: ☑
+:Valid Start Action: Unchecked
+:Valid Termination Action: Checked
 :Backend Inbound Pipeline: FileSaveInboundPipeline
 :Backend Outbound Pipeline: PingPipeline
 :Status Update Pipeline: None
-:Polling Required: ☐
+:Polling Required: Unchecked
 :Document Type:
 
 Open Action Ping and select Pong as Enabled Follow-Up Actions.
@@ -302,7 +302,7 @@ In NEXUSe2e go to:
 
 :Name: CIOTBestandScanner
 :Component: DirectoryScannerService
-:Autostart: ☑
+:Autostart: Checked
 :Scheduling Service: SchedulingService
 :Directory: /home/ciot/outbound *(example)*
 :Backup Directory: /home/ciot/sent *(example)*
@@ -320,7 +320,7 @@ Also create a directory scanner for the OTA environment, for testing purposes.
 
 :Name: CIOTBestandScannerOTA
 :Component: DirectoryScannerService
-:Autostart: ☑
+:Autostart: Checked
 :Scheduling Service: SchedulingService
 :Directory: home/ciot/ota/outbound *(example)*
 :Backup Directory: /home/ciot/ota/sent *(example)*
